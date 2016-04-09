@@ -45,6 +45,8 @@
 #include "g_game.h"
 #include "r_main.h"
 
+void iphoneSetNotifyText( const char *str, ... );
+
 // global heads up display controls
 
 int hud_active;       //jff 2/17/98 controls heads-up display mode

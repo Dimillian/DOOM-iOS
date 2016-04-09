@@ -64,6 +64,8 @@
 #include "gl_intern.h"
 #include "gl_struct.h"
 
+void IR_InitLevel();
+
 extern int tran_filter_pct;
 
 // JDC #define USE_VERTEX_ARRAYS

@@ -90,6 +90,9 @@
 #define SAVEGAMESIZE  0x20000
 #define SAVESTRINGSIZE  24
 
+void iphoneIntermission( wbstartstruct_t* wb );
+void iphoneStartLevel();
+
 static size_t   savegamesize = SAVEGAMESIZE; // killough
 static boolean  netdemo;
 static const byte *demobuffer;   /* cph - only used for playback */

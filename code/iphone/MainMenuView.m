@@ -14,6 +14,8 @@
 #import "doomAppDelegate.h"
 #include "doomiphone.h"
 
+void SetupEmptyNetGame();
+
 @implementation Banner_SubItem
 
 

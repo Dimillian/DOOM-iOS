@@ -13,6 +13,8 @@
 #import "MapMenuView.h"
 #import "doomAppDelegate.h"
 
+void Sound_StartLocalSound( const char *filename );
+
 @implementation MapMenuView
 
 - (void) initialize{

@@ -274,7 +274,7 @@ void *GameThread( void *args ) {
     [self PrepareForViewSwap];
     
     // Switch to the Game View.
-    [window addSubview: mainMenuViewController.view];
+    window.rootViewController = mainMenuViewController;
     [window makeKeyAndVisible];
     iphonePauseMusic();
     
@@ -299,7 +299,7 @@ void *GameThread( void *args ) {
     [self PrepareForViewSwap];
     
     // Switch to the Game View.
-    [window addSubview: episodeMenuViewController.view];
+    window.rootViewController = episodeMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;
@@ -325,7 +325,7 @@ void *GameThread( void *args ) {
     [self PrepareForViewSwap];
     
     // Switch to the Game View.
-    [window addSubview: creditsMenuViewController.view];
+    window.rootViewController = creditsMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;
@@ -338,7 +338,7 @@ void *GameThread( void *args ) {
     [self PrepareForViewSwap];
     
     // Switch to the Game View.
-    [window addSubview: legalMenuViewController.view];
+    window.rootViewController = legalMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;
@@ -365,7 +365,7 @@ void *GameThread( void *args ) {
     [ menu SetOptions];
     
     // Switch to the Game View.
-    [window addSubview: controlsMenuViewController.view];
+    window.rootViewController = controlsMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;
@@ -381,7 +381,7 @@ void *GameThread( void *args ) {
     [ menu resetSwitches];
     
     // Switch to the Game View.
-    [window addSubview: settingsMenuViewController.view];
+    window.rootViewController = settingsMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;
@@ -415,7 +415,7 @@ void *GameThread( void *args ) {
     [ (MapMenuView*)mapMenuViewController.view setEpisode: episode ];
     
     // Switch to the Game View.
-    [window addSubview: mapMenuViewController.view];
+    window.rootViewController = mapMenuViewController;
     [window makeKeyAndVisible];
     
     displayLink.paused = YES;

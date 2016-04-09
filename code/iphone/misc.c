@@ -31,7 +31,7 @@ void Com_Printf( const char *fmt, ... ) {
 	vsnprintf( buffer, sizeof( buffer ), fmt, argptr );
 	AppendConsoleBuffer(buffer);
 	
-	vprintf( fmt, argptr );
+//	vprintf( fmt, argptr );
 	va_end( argptr );
 }
 
